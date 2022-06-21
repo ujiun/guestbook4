@@ -21,28 +21,25 @@ public class GuestbookService {
 
 	// 메소드-일반
 
-	// 전화번호 리스트
+	// 리스트
 	public List<GuestbookVo> getList() {
-		System.out.println("PhoneService>getPersonList()");
-
+		System.out.println("GuestbookService>getList()");
 		List<GuestbookVo> gList = guestbookDao.getList();
 
 		return gList;
 	}
 
-	// 전화번호 등록
+	// 등록
 	public int add(GuestbookVo vo) {
-		System.out.println("PhoneService>add()");
-
+		System.out.println("GuestbookService>add()");
 		int count = guestbookDao.add(vo);
 
 		return count;
 	}
 
-	// 전화번호 삭제
+	// 삭제
 	public int delete(GuestbookVo vo) {
-		System.out.println("PhoneService>delete()");
-		
+		System.out.println("GuestbookService>delete()");
 		int count = guestbookDao.delete(vo);
 		
 		return count;
